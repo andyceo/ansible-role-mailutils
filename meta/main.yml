@@ -1,0 +1,19 @@
+---
+allow_duplicates: no
+
+dependencies:
+  - { role: andyceo.preconf }
+
+galaxy_info:
+  author: andyceo
+  description: Installs mailutils and postfix (Provide sendmail in php, mail in console)
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.5
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+    - system
+    - mail
+    - web
