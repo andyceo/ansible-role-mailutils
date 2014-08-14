@@ -4,3 +4,7 @@
     - mailutils
     - postfix
   sudo: yes
+-
+  name: Listen only on local interface
+  lineinfile: dest=/etc/postfix/main.cf regexp='^inet_interfaces' line='inet_interfaces = 127.0.0.1'
+  notify: restart postfix
