@@ -1,5 +1,5 @@
 - name: Install mailutils postfix for sending emails (provide sendmail in php, mail in console)
-  apt: pkg={{ item }}
+  apt: pkg={{ item }} update_cache=yes
   with_items:
     - mailutils
     - postfix

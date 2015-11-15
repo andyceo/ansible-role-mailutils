@@ -1,8 +1,6 @@
 ---
-allow_duplicates: no
 
-dependencies:
-  - { role: andyceo.preconf }
+allow_duplicates: no
 
 galaxy_info:
   author: andyceo
